@@ -773,10 +773,10 @@ button .hero {
     left: 63%;
     transform: translate(-50%, -50%);
 }
-.modal button {
+.modal .modal-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     background: #FFFFFF;
@@ -784,4 +784,7 @@ button .hero {
     border-radius: 50%;
     align-items: center;
 }
+
+
+
 
