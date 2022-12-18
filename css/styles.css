@@ -756,6 +756,9 @@ button .hero {
     opacity: 0;
     pointer-events: none;
 }
+.modal-info {
+    position: absolute ;
+}
 .modal {
     position: absolute;
     top: 50%;
@@ -769,12 +772,14 @@ button .hero {
 
 }
 .modal-close {
-    top: 34%;
-    left: 63%;
-    transform: translate(-50%, -50%);
 }
+
 .modal .modal-close {
     position: absolute;
+    top: 34%;
+    right: 63%;
+    transform: translate(-50%, -50%);
+    
     top: 8px;
     right: 8px;
     width: 30px;
@@ -785,6 +790,9 @@ button .hero {
     align-items: center;
 }
 
+.modal .comment {
+    resize: none;
+}
 
 
 
