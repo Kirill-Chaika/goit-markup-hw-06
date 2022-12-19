@@ -313,35 +313,30 @@
             </button>
 
               <p>Залиште свої дані, ми вам передзвонимо</p>
-            <form name="modal-wiew">
-              <ul>
-              <li>
-                <label for="name">
-                Ім'я 
-                <input type="text" id="name" name="name"></label>
-              </li>
-
-              <li>
-                <label for="tel" >
-                Телефон
-                <input type="tel" id="tel">
-                </label>
-              </li>  
-  
-              <li>
-                <label for="email">
-                Пошта
-                <input type="email" id="email">
-                </label>
-              </li>
-              </ul>
+            <form name="modal-form">
+              
+              <label class="modal-form-field">
+                <span class="modal-form-input-desk">Ім'я</span>
+              <input class="modal-form-input" type="text"  name="name">
+              </label>
+              
+              <label class="modal-form-field">
+                <span class="modal-form-input-desk">Телефон</span>
+              <input class="modal-form-input" type="tel">
+              </label>
+              
+              <label class="modal-form-field">
+                <span class="modal-form-input-desk">Пошта</span>
+              <input class="modal-form-input" type="email">
+              </label>
+              <label>
+                Коментар
+                <textarea name="comment" class="comment"></textarea>
+              </label>
+              <button type="submit">Відправити</button>
             </form>
 
-            <label>
-              Коментар
-            <textarea name="comment" class="comment"></textarea>
-            </label>
-            <button type="submit">Відправити</button>
+            
             
           </div>
         
