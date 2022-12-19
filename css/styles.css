@@ -778,7 +778,7 @@ button .hero {
     position: absolute;
     top: 34%;
     right: 63%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -2%);
     
     top: 8px;
     right: 8px;
