@@ -122,6 +122,16 @@ body {
     margin: 0 auto;
     outline: 2px solid red;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 .auth-nav .header {
     display: block;
     display: flex;
@@ -863,4 +873,39 @@ button .hero {
 .modal .modal-form-massage:focus {
     outline: none;
     border-color: var(--brand-color);
+    
+}
+.modal-form-check-desc {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modal-form-check-desc::before {
+    display: block;
+    height: 18px;
+    width: 18px;
+    border:1px solid #212121;
+    content: "";
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+    background-color: var(--brand-color);
+    background-image: url(../images-2/icon-check.svg);
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    outline: none;
+}
+.modal-form-check:focus + .modal-form-check-desc::before {
+    outline: 2px solid var(--brand-color);
 }
