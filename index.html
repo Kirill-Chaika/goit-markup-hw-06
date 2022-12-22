@@ -306,7 +306,7 @@
 
         <label for="">
                 <span class="footer-form-input-wrapper">
-                  <input class="footer-form-input" type="email" name="email" required placeholder="E-mail" >
+                  <input class="footer-form-input" type="email" name="footer-email" required placeholder="E-mail" >
                 </span>
         </label>
         <span class="footer-form-input-wrapper">
@@ -335,7 +335,7 @@
               <label class="modal-form-field">
                 <span class="modal-form-input-desk">Ім'я</span>
                 <span class="modal-form-input-wrapper">
-                  <input class="modal-form-input" type="text"  name="name" required>
+                  <input class="modal-form-input" type="text"  name="user-name" required>
               <svg class="modal-form-input-icon" width="18" height="18">
                 <use href="./images-2/icons.svg#icon-person"></use>
               </svg>
@@ -345,7 +345,7 @@
               <label class="modal-form-field">
                 <span class="modal-form-input-desk">Телефон</span>
                 <span class="modal-form-input-wrapper">
-                  <input class="modal-form-input" type="tel" required>
+                  <input class="modal-form-input" type="tel" name="user-phone" required>
               <svg class="modal-form-input-icon" width="18" height="18">
                 <use href="./images-2/icons.svg#icon-phone"></use>
               </svg>
@@ -355,7 +355,7 @@
               <label class="modal-form-field">
                 <span class="modal-form-input-desk">Пошта</span>
                 <span class="modal-form-input-wrapper">
-                  <input class="modal-form-input" type="email" required>
+                  <input class="modal-form-input" type="email" name="user-mail" required>
               <svg class="modal-form-input-icon" width="18" height="18">
                 <use href="./images-2/icons.svg#icon-email"></use>
               </svg>
@@ -365,7 +365,7 @@
                 <span class="modal-form-input-desk">Коментар</span>
                 <textarea name="user-message" class="modal-form-massage" placeholder="Введіть текст"></textarea>
               </label>
-              <input type="checkbox" id="user-polisy" class="modal-form-check visually-hidden">
+              <input type="checkbox" id="user-polisy" name="user-polisy" value="user-polisy" class="modal-form-check visually-hidden" required>
               <label for="user-polisy" class="modal-form-check-desc">
                 Погоджуюся з розсилкою та приймаю&nbsp;<a href="#">Умови договору</a>
               </label>
