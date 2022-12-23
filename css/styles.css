@@ -54,11 +54,9 @@ body {
     text-decoration: none;
     display: block;
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
-.web span {
+.web {
     color: var(--logo-color);
 }
 /* header */
@@ -74,12 +72,8 @@ body {
     /* margin-right: 50px; */
     
 }
-.header-animation {
-    position: relative;
-    bottom: 0;
-    
-}
 .header a {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -87,7 +81,7 @@ body {
     color: #212121;
     text-decoration: none;
     padding-top: 32px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -135,13 +129,13 @@ body {
 .auth-nav .header {
     display: block;
     display: flex;
-    margin-left: 12px;
     align-items: center;
+    margin-right: 50px;
 }
 
 .posted a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 /* .link-mailto a { */
     
@@ -174,6 +168,12 @@ body {
     display: block;
     display: flex;
     /* align-items: center; */
+}
+.container-posted {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 .posted {
     justify-content: flex-end;
