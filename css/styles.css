@@ -5,7 +5,7 @@
 }
 
 :root {
-    --brand-color: #2196F3;
+    --brand-color: #4D5AE5;
     --text-color: #FFFFFF;
     --logo-color: #000000;
     --o-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -215,7 +215,7 @@ body {
 /* Hero-main */
 .hero,
 .footer {
-    background-color: #2F303A;
+    background-color: #2E2F42;
 }
 .hero-main {
     font-weight: 900;
@@ -234,9 +234,10 @@ body {
     margin-right: auto;
     margin-left: auto;
     /* background: rgba(47, 48, 58, 0.4); */
-    background-image: url(../images-2/Hero-bg.svg);
+    background-image: url(../images-2/Hero-bckg.jpg);
     /* background-color: rgba(47, 48, 58, 0.8); */
-    max-width: 1600px;
+    max-width: 1440px;
+    max-height: 600px;
 }
 
 
@@ -267,7 +268,7 @@ button .hero {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     /* border: 1px solid #000000; */
     border-radius: 4px;
-    background-color: #188CE8;
+    background-color: var(--brand-color);
 }
 
 .container-portfolio .list {
@@ -555,6 +556,10 @@ button .hero {
     display: flex;
     text-align: center;
     padding-bottom: 30px;
+    
+}
+.team .icon-team li {
+    margin-right: 24px;
 }
 .team .icon-team a {
     padding: 12px ;
@@ -563,10 +568,10 @@ button .hero {
     justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #AFB1B8;
-    
+    border-radius: 50px;
     /* margin: 0 auto; */
 }
-.team .icon-team li {
+.team .icon-team .icon-team-elements {
     margin-right: 10px;
 }
 .team .icon-team a:hover,
@@ -574,8 +579,11 @@ button .hero {
     color: #FFFFFF;
     /* background-color: #2196F3; */
     background-repeat: no-repeat;
-    background-image: url(../images-2/Ellipse.svg); 
-    background-position: 50% 50%;
+    fill: #4D5AE5;
+    border-radius: 50px;
+    background-color: var(--brand-color);
+    /* background-image: url(../images-2/Ellipse.svg);  */
+    /* background-position: -50%, -50%; */
 }
 .team .icon-team .icon-time-icon {
     fill: currentColor;
@@ -627,9 +635,9 @@ button .hero {
 .regular-customers ul li a:hover,
 .regular-customers ul li a:focus {
     /* background-color: #2196F3; */
-    border: 1px solid #2196F3;
+    border: 1px solid var(--brand-color);
     border-radius: 4px;
-    fill: #2196F3;
+    fill: var(--brand-color);
 }
 /* .regular-customers li use:hover,
 .regular-customers li svg:focus {
