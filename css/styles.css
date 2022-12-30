@@ -1,7 +1,7 @@
 *,
 *::after {
-    box-sizing: inherit;
-    box-sizing: border-box;
+    /* box-sizing: inherit;
+    box-sizing: border-box; */
 }
 
 :root {
@@ -78,7 +78,7 @@ body {
     
 }
 .header li {
-    margin-right: 50px;
+    margin-right: 40px;
     
 }
 .header a {
@@ -90,8 +90,8 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list {
@@ -146,8 +146,8 @@ body {
 }
 
 .posted a {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 28px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -258,18 +258,20 @@ body {
     margin-right: auto;
     margin-left: auto;
     /* background: rgba(47, 48, 58, 0.4); */
-    background-image: url(../images-2/Hero-bckg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images-2/Hero-bckg.jpg);
     /* background-color: rgba(47, 48, 58, 0.8); */
     max-width: 1440px;
-    max-height: 600px;
+    /* max-height: 600px; */
+    text-align: center;
+    background-size: cover;
 }
-.hero-bcg {
+/* .hero-bcg {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.7);
     top: 0;
-}
+} */
 .hero-container {
     position: relative;
 }
@@ -279,14 +281,14 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: var(--brand-color);
     color: var(--text-color);
-    display: block;
-    margin: 0 auto;
+    /* display: block; */
+    /* margin: 0 auto; */
     padding: 16px 32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: transparent;
@@ -323,8 +325,8 @@ button .hero {
 .about  {
     padding-top: 94px;
     padding-bottom: 94px;
-    display: block;
-    display: flex;
+    /* display: block;
+    display: flex; */
 }
 .list-title {
     /* font-style: normal; */
@@ -337,7 +339,7 @@ button .hero {
     /* padding-bottom: 20px; */
 }
 .about .container-about {
-    width: 270px;
+    /* width: 260px; */
     height: 120px;
     display: flex;
     align-items: center;
@@ -350,7 +352,8 @@ button .hero {
     fill: #AFB1B8;
 }
 .about .list li {
-    margin-right: 30px;
+    margin-right: 24px;
+    flex-basis: calc(100% - 4 * 12px);
 }
 .about .list li:last-child {
     margin-right: 0;
@@ -368,7 +371,8 @@ button .hero {
 }
 
 .section-img li {
-    margin-right: 30px;
+    margin-right: 24px;
+    
 }
 .section-img-link {
     
@@ -414,7 +418,7 @@ button .hero {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     margin-bottom: 10px;
 }
 /* .team .container { */
@@ -430,7 +434,7 @@ button .hero {
     text-align: center;
     letter-spacing: 0.02em;
     color: #757575;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 /* Hero-portfolio */
@@ -460,6 +464,7 @@ button .hero {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    color: var(--brand-color);
 }
 
 .list li a{
@@ -484,8 +489,8 @@ button .hero {
     background-color: var(--brand-color);
     color: var(--text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: transparent;
+    /* border-radius: 4px; */
+    border: 1px solid transparent;
 }
 .hero-portfolio {
     padding-top: 96px;
@@ -505,14 +510,15 @@ button .hero {
 }
 .some-item {
     width: 360px;
+    
 }
-.list-portfolio .some-item-container:hover,
-.list-portfolio .some-item-container:focus {
-    /* border: 1px solid #EEEEEE; */
+.some-item:hover,
+.some-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.some-item-container:hover .list-portfolio-link,
-.some-item-container:focus .list-portfolio-link {
+
+.some-item:hover .list-portfolio-link,
+.some-item:focus .list-portfolio-link {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -521,7 +527,8 @@ button .hero {
 }
 .some-item-thumb  {
     /* position: relative; */
-    
+    position: relative;
+    overflow: hidden;
 
 }
 .headlines {
@@ -594,8 +601,8 @@ button .hero {
 }
 .team li {
     background-color: var(--text-color);
-    width: 270px;
-    margin-right: 30px;
+    width: 264px;
+    margin-right: 24px;
 }
 /* .list-portfolio-img {
 } */
@@ -607,7 +614,7 @@ button .hero {
 .team .icon-team {
     display: flex;
     text-align: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     
 }
 .team .icon-team li {
@@ -644,7 +651,8 @@ button .hero {
 
 .team .container  {
     display: block;
-    width: 270px;
+    width: 264px;
+    padding: 32px 16px;
 }
 .regular-customers {
     width: inherit;
@@ -668,8 +676,8 @@ button .hero {
     margin-right: 30px;
 }
 .regular-customers ul li a{
-    width: 170px;
-    height: 92px;
+    width: 168px;
+    height: 88px;
     /* margin-right: 30px; */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -768,13 +776,13 @@ button .hero {
     margin-bottom: 9px;
 }
 
-.pane {
+/* .pane {
     display: none;
-}
+} */
 .footer .container {
     display: flex;
     /* text-align: center; */
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     align-items: baseline;
 }
 .container-left {
@@ -806,13 +814,13 @@ button .hero {
     text-align: left;
 }
 .container-right .icon-team a {
-    padding: 12px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 16px;
     fill: var(--text-color);
-    background-color: rgba(25, 25, 25, 1);
+    background-color: rgba(66, 67, 85, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* color: #AFB1B8; */
     border-radius: 50px;
@@ -827,10 +835,10 @@ button .hero {
     background-color: #31D0AA;
 }
 .container-footer-title {
-    /* padding-top: 100px; */
+    padding-left: 93px;
 }
 .footer-title {
-    margin-left: 93px;
+    /* margin-left: 93px; */
     margin-bottom: 20px;
     /* font-style: normal; */
     font-weight: 600;
@@ -841,7 +849,7 @@ button .hero {
 }
 .futter-form {
     display: flex;
-    padding-left: 93px;
+    /* padding-left: 93px; */
     text-align: center;
     justify-content: center;
 }
