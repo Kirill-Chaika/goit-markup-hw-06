@@ -91,7 +91,7 @@ body {
     color: #2E2F42;
     text-decoration: none;
     padding-top: 24px;
-    padding-bottom: 28px;
+    padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list {
@@ -146,6 +146,7 @@ body {
 }
 
 .posted a {
+    display: block;
     padding-top: 24px;
     padding-bottom: 28px;
     font-style: normal;
@@ -172,7 +173,7 @@ body {
     color: #757575;
     text-decoration: none;
     display: flex;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .posted li {
     margin-right: 40px;
@@ -277,18 +278,16 @@ body {
 }
 
 .hero-btn {
-    /* font-style: normal; */
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
-    /* display: flex; */
+    
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: var(--brand-color);
     color: var(--text-color);
-    /* display: block; */
-    /* margin: 0 auto; */
     padding: 16px 32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: transparent;
@@ -303,8 +302,6 @@ button .hero {
 .hero-btn:hover,
 .hero-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /* border: 1px solid #000000; */
-    border-radius: 4px;
     background-color: var(--brand-color);
 }
 
@@ -321,6 +318,7 @@ button .hero {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    color: #2E2F42;
 }
 .about  {
     padding-top: 94px;
@@ -365,14 +363,16 @@ button .hero {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: #434455;
     margin-top: 10px;
     /* margin-right: 30px; */
 }
 
 .section-img li {
     margin-right: 24px;
-    
+}
+.section-img li:last-child {
+    margin-right: 0;
 }
 .section-img-link {
     
@@ -408,8 +408,8 @@ button .hero {
     margin-bottom: 50px;
 }
 .section .container {
-    padding-top: 94px;
-    margin-bottom: 94px;
+    /* padding-top: 94px; */
+    padding-bottom: 120px;
 }
 .list-names {
     /* font-style: normal; */
@@ -448,17 +448,20 @@ button .hero {
     font-family: inherit;
     cursor: pointer;
     background-color: #F5F4FA;
-    padding: 6px 25px
+    padding: 8px 16px
     
 }
-.container .hero-portfolio-link li {
+.hero-portfolio-button li {
     margin-right: 8px;
 }
-.container .hero-portfolio-link button {
+.hero-portfolio-button li:last-child {
+    margin-right: 0;
+}
+.hero-portfolio-button button {
     display: block;
     display: flex;
     margin: 0 auto;
-    /* margin-right: 8px; */
+    
     border-radius: 4px;
     border: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,14 +497,12 @@ button .hero {
 }
 .hero-portfolio {
     padding-top: 96px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
-.hero-portfolio-link {
-    margin-bottom: 50px;
-    margin-right: 8px;
+.hero-portfolio-button {
+    padding-bottom: 72px;
     display: flex;
     justify-content: center;
-    margin-right: 8px;
 }
 .list-portfolio {
     flex-wrap: wrap;
@@ -512,13 +513,13 @@ button .hero {
     width: 360px;
     
 }
-.some-item:hover,
-.some-item:focus {
+.list-portfolio-cards:hover,
+.list-portfolio-cards:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.some-item:hover .list-portfolio-link,
-.some-item:focus .list-portfolio-link {
+.list-portfolio-cards:hover .list-portfolio-link,
+.list-portfolio-cards:focus .list-portfolio-link {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -550,7 +551,7 @@ button .hero {
 
 .list-portfolio li a .container {
     width: inherit;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #F4F4FD;
     border-top: 0;
     padding: 32px 16px;
     /* border-top: 0; */
@@ -604,6 +605,9 @@ button .hero {
     width: 264px;
     margin-right: 24px;
 }
+.team li:last-child {
+    margin-right: 0;
+}
 /* .list-portfolio-img {
 } */
 
@@ -619,6 +623,9 @@ button .hero {
 }
 .team .icon-team li {
     margin-right: 24px;
+}
+.team .icon-team li:last-child {
+    margin-right: 0;
 }
 .team .icon-team a {
     padding: 12px ;
@@ -673,7 +680,7 @@ button .hero {
     margin: 0 auto;
     display: block;
     display: flex;
-    margin-right: 30px;
+    margin-right: 24px;
 }
 .regular-customers ul li a{
     width: 168px;
@@ -787,7 +794,7 @@ button .hero {
 }
 .container-left {
     text-align: left;
-    margin-right: 60px;
+    margin-right: 120px;
 }
 .container-left p {
     /* font-family: 'Roboto'; */
@@ -810,24 +817,30 @@ button .hero {
     line-height: 1.5;
     letter-spacing: 0.02em;  
     color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: left;
 }
-.container-right .icon-team a {
+.container-right-link {
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 16px;
+    
     fill: var(--text-color);
     background-color: rgba(66, 67, 85, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* color: #AFB1B8; */
     border-radius: 50px;
 }
+.icon-team-elements {
+    margin-right: 16px;
+}
+.icon-team-elements:last-child {
+    margin-right: 0;
+}
 
-.container-right .icon-team a:hover,
-.container-right .icon-team a:focus {
+.container-right-link:hover,
+.container-right-link:focus {
     background-repeat: no-repeat;
     fill: #4D5AE5;
     fill: var(--text-color);
@@ -835,7 +848,7 @@ button .hero {
     background-color: #31D0AA;
 }
 .container-footer-title {
-    padding-left: 93px;
+    margin-left: 93px;
 }
 .footer-title {
     /* margin-left: 93px; */
@@ -867,8 +880,8 @@ button .hero {
     letter-spacing: 0.06em;
     
     display: block;
-    width: 200px;
-    height: 50px;
+    width: 168px;
+    height: 40px;
     background: var(--brand-color);
     border: transparent;
     border-radius: 4px;
@@ -877,8 +890,8 @@ button .hero {
     padding-right: 62px;
 }
 .footer-form-input {
-    width: 358px;
-    height: 50px;
+    width: 264px;
+    height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -934,23 +947,27 @@ button .hero {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 579px;
+    min-height: 594px;
     min-width: 408px;
+    max-width: 408px;
+    max-height: 594px;
     background: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    padding: 24px;
+    padding-top: 75px;
 }
 .modal-close {
 }
 .modal p {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 17px;
 }
 
 .modal .modal-close {
@@ -959,10 +976,10 @@ button .hero {
     right: 63%;
     transform: translate(0%, -2%);
     
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
+    top: 25px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -975,18 +992,20 @@ button .hero {
 
 .modal-form .modal-form-field {
     display: block;
+    
 
 }
 
 
 .modal-form-input-desk {
     display: block;
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.16;
     letter-spacing: 0.01em;
+    color: #8E8F99;
     margin-bottom: 4px;
-    color: #757575;
 }
 .modal-form-input-wrapper {
     display: block;
@@ -999,7 +1018,7 @@ button .hero {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     transition: border-color var(--o-animation);
 }
 .modal-form-input:focus {
@@ -1008,6 +1027,7 @@ button .hero {
 }
 
 .modal .modal-form-massage {
+    display: block;
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -1041,19 +1061,20 @@ button .hero {
 .modal-form-check-desc {
     display: flex;
     align-items: center;
+    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
     color: #757575;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .modal-form-check-desc::before {
     display: block;
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     border:1px solid #212121;
     content: "";
     cursor: pointer;
@@ -1083,6 +1104,10 @@ button .hero {
     border-radius: 4px;
     color: var(--text-color);
     border-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
 }
 .modal-form-submit:hover,
 .modal-form-submit:focus {
