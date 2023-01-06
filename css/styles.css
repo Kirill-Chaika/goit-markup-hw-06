@@ -126,7 +126,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 .visually-hidden {
     position: absolute;
@@ -980,19 +980,21 @@ button .hero {
     right: 24px;
     width: 24px;
     height: 24px;
-    background: #FFFFFF;
+    background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     align-items: center;
+    transition: background-color var(--o-animation);
 }
 .modal .modal-close:hover,
 .modal .modal-close:focus {
-    fill: var(--brand-color);
+    fill: var(--text-color);
+    background-color: #404BBF;
 }
 
-.modal-form .modal-form-field {
+.modal-form-field {
     display: block;
-    
+    margin-bottom: 8px;
 
 }
 
@@ -1018,7 +1020,6 @@ button .hero {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-    margin-bottom: 8px;
     transition: border-color var(--o-animation);
 }
 .modal-form-input:focus {
